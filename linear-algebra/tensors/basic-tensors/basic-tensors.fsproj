@@ -1,0 +1,16 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{DC604AD2-CEF6-4627-8D06-D9E15FDC24EA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<Compile Include="basic-tensors.fs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Numerics.NET.Core" Version="9.1.3-*" />
+		<PackageReference Include="Numerics.NET.Tensors" Version="9.0.5-*" />
+		<PackageReference Include="Numerics.NET.FSharp" Version="9.0.0-*" />
+	</ItemGroup>
+</Project>
