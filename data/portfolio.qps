@@ -1,0 +1,24 @@
+NAME          PORTFOLIO
+ROWS
+ N  COST
+ L  BUDGET
+ G  GROWTH
+COLUMNS
+    X1        BUDGET             1.0   GROWTH            0.05
+    X2        BUDGET             1.0   GROWTH            -0.2
+    X3        BUDGET             1.0   GROWTH            0.15
+    X4        BUDGET             1.0   GROWTH            0.30
+RHS
+    RHS       BUDGET           10000   GROWTH            1000
+QUADOBJ
+    X1        X1        0.08
+    X1        X2        -0.05
+    X1        X3        -0.05
+    X1        X4        -0.05
+    X2        X2        0.16
+    X2        X3        -0.02
+    X2        X4        -0.02
+    X3        X3        0.35
+    X3        X4        0.06
+    X4        X4        0.35
+ENDATA
