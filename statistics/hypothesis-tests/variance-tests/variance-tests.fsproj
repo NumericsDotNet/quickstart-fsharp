@@ -1,0 +1,14 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{6BEFD7A7-B334-45E6-9FEC-84BCD1F32495}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="variance-tests.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Numerics.NET.Core" Version="9.1.3-*" />
+  </ItemGroup>
+</Project>

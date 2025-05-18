@@ -1,0 +1,31 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{7D4CB8E3-C1FD-4451-991E-0CAB08E39650}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+		<LangVersion>5.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+		<LangVersion>5.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<LangVersion>6.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="accessing-tensor-elements.fs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Numerics.NET.Core" Version="9.1.3-*" />
+		<PackageReference Include="Numerics.NET.Tensors" Version="9.0.5-*" />
+		<PackageReference Include="Numerics.NET.FSharp" Version="9.0.3-*" />
+	</ItemGroup>
+</Project>

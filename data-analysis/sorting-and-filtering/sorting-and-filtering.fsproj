@@ -1,0 +1,15 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{667D618A-94D1-4BD2-8743-D1ED91B26DD7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="sorting-and-filtering.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Numerics.NET.Data" Version="4.0.*" />
+    <PackageReference Include="Numerics.NET.Core" Version="9.1.3-*" />
+  </ItemGroup>
+</Project>

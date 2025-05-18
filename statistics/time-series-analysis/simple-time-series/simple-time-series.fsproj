@@ -1,0 +1,15 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{B9FF6476-FB84-41C8-A499-10DD8CE91DD5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="simple-time-series.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Numerics.NET.Data" Version="4.0.*" />
+    <PackageReference Include="Numerics.NET.Core" Version="9.1.3-*" />
+  </ItemGroup>
+</Project>
